@@ -85,44 +85,60 @@
 					<div class="control-group">
 						<label class="control-label">ID</label>
 						<div class="controls">
-							<input name="id" type="text"  placeholder="" value="<?php echo $data['id'];?>" readonly>
+							<input class="form-control" disabled name="id" type="text" value="<?php echo $data['id'];?>" readonly>
 						</div>
 					</div>
-					
+
 					<div class="control-group">
 						<label class="control-label">Name</label>
 						<div class="controls">
-							<input name="name" type="text"  placeholder="" value="<?php echo $data['name'];?>" required>
+							<input class="form-control" name="name" type="text" value="<?php echo $data['name'];?>" required>
 						</div>
 					</div>
-					
+
+					<!-- Tambahkan NIM -->
+					<div class="control-group">
+						<label class="control-label">NIM</label>
+						<div class="controls">
+							<input class="form-control" name="nim" type="text" value="<?php echo $data['nim'];?>" required>
+						</div>
+					</div>
+
+					<!-- Tambahkan Class -->
+					<div class="control-group">
+						<label class="control-label">Kelas</label>
+						<div class="controls">
+							<input class="form-control" name="class" type="text" value="<?php echo $data['class'];?>" required>
+						</div>
+					</div>
+
 					<div class="control-group">
 						<label class="control-label">Gender</label>
 						<div class="controls">
-							<select name="gender" id="mySelect">
+							<select class="form-control" name="gender" id="mySelect">
 								<option value="Male">Male</option>
 								<option value="Female">Female</option>
 							</select>
 						</div>
 					</div>
-					
+
 					<div class="control-group">
 						<label class="control-label">Email Address</label>
 						<div class="controls">
-							<input name="email" type="text" placeholder="" value="<?php echo $data['email'];?>" required>
+							<input class="form-control" name="email" type="text" value="<?php echo $data['email'];?>" required>
 						</div>
 					</div>
-					
+
 					<div class="control-group">
 						<label class="control-label">Mobile Number</label>
 						<div class="controls">
-							<input name="mobile" type="text"  placeholder="" value="<?php echo $data['mobile'];?>" required>
+							<input class="form-control" name="mobile" type="text" value="<?php echo $data['mobile'];?>" required>
 						</div>
 					</div>
-					
-					<div class="form-actions">
-						<button type="submit" class="btn btn-success">Update</button>
-						<a class="btn" href="user data.php">Back</a>
+
+					<div class="form-actions mt-4 d-flex flex-row gap-2 w-100">
+						<button type="submit" class="btn btn-success w-100">Update</button>
+						<a class="btn w-100" href="user data.php">Back</a>
 					</div>
 				</form>
 			</div>               

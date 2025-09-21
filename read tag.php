@@ -68,64 +68,56 @@
 	</head>
 	
 	<body>
-		<h2 align="center">NodeMCU V3 ESP8266 / ESP12E with MYSQL Database</h2>
-		<ul class="topnav">
-			<li><a href="home.php">Home</a></li>
-			<li><a href="user data.php">User Data</a></li>
-			<li><a href="registration.php">Registration</a></li>
-			<li><a class="active" href="read tag.php">Read Tag ID</a></li>
-		</ul>
-		
-		<br>
-		
-		<h3 align="center" id="blink">Please Tag to Display ID or User Data</h3>
-		
-		<p id="getUID" hidden></p>
-		
-		<br>
-		
-		<div id="show_user_data">
-			<form>
-				<table  width="452" border="1" bordercolor="#10a0c5" align="center"  cellpadding="0" cellspacing="1"  bgcolor="#000" style="padding: 2px">
-					<tr>
-						<td  height="40" align="center"  bgcolor="#10a0c5"><font  color="#FFFFFF">
-							<b>User Data</b>
-							</font>
-						</td>
-					</tr>
-					<tr>
-						<td  bgcolor="#f9f9f9">
-							<table width="452"  border="0" align="center" cellpadding="5"  cellspacing="0">
-								<tr>
-									<td width="113" align="left" class="lf">ID</td>
-									<td style="font-weight:bold">:</td>
-									<td align="left">--------</td>
-								</tr>
-								<tr bgcolor="#f2f2f2">
-									<td align="left" class="lf">Name</td>
-									<td style="font-weight:bold">:</td>
-									<td align="left">--------</td>
-								</tr>
-								<tr>
-									<td align="left" class="lf">Gender</td>
-									<td style="font-weight:bold">:</td>
-									<td align="left">--------</td>
-								</tr>
-								<tr bgcolor="#f2f2f2">
-									<td align="left" class="lf">Email</td>
-									<td style="font-weight:bold">:</td>
-									<td align="left">--------</td>
-								</tr>
-								<tr>
-									<td align="left" class="lf">Mobile Number</td>
-									<td style="font-weight:bold">:</td>
-									<td align="left">--------</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-			</form>
+		<div class="container">
+			<h2 class="mt-3">Absensi Otomatis</h2>
+			<?php include 'navbar.php'; ?>
+			<br>
+			<h3 align="center" id="blink">Please Tag to Display ID or User Data</h3>
+			<p id="getUID" hidden></p>
+			<br>	
+			<div id="show_user_data">
+				<form>
+					<table  width="452" border="1" bordercolor="#10a0c5" align="center"  cellpadding="0" cellspacing="1"  bgcolor="#000" style="padding: 2px">
+						<tr>
+							<td  height="40" align="center"  bgcolor="#10a0c5"><font  color="#FFFFFF">
+								<b>User Data</b>
+								</font>
+							</td>
+						</tr>
+						<tr>
+							<td  bgcolor="#f9f9f9">
+								<table width="452"  border="0" align="center" cellpadding="5"  cellspacing="0">
+									<tr>
+										<td width="113" align="left" class="lf">ID</td>
+										<td style="font-weight:bold">:</td>
+										<td align="left">--------</td>
+									</tr>
+									<tr bgcolor="#f2f2f2">
+										<td align="left" class="lf">Name</td>
+										<td style="font-weight:bold">:</td>
+										<td align="left">--------</td>
+									</tr>
+									<tr>
+										<td align="left" class="lf">Gender</td>
+										<td style="font-weight:bold">:</td>
+										<td align="left">--------</td>
+									</tr>
+									<tr bgcolor="#f2f2f2">
+										<td align="left" class="lf">Email</td>
+										<td style="font-weight:bold">:</td>
+										<td align="left">--------</td>
+									</tr>
+									<tr>
+										<td align="left" class="lf">Mobile Number</td>
+										<td style="font-weight:bold">:</td>
+										<td align="left">--------</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
 		</div>
 
 		<script>
