@@ -22,7 +22,7 @@ Database::disconnect();
         margin: auto;
         padding: 0;
         overflow: hidden;
-        background-color: #4CAF50;
+        background-color: #e2ae3cff;
         width: 100%;
     }
 
@@ -36,9 +36,9 @@ Database::disconnect();
         text-decoration: none;
     }
 
-    ul.topnav li a:hover:not(.active) {background-color: #3e8e41;}
+    ul.topnav li a:hover:not(.active) {background-color: #947430ff;}
 
-    ul.topnav li a.active {background-color: #333;}
+    ul.topnav li a.active {background-color: #947430ff;}
 
     ul.topnav li.right {float: right;}
 
@@ -61,10 +61,12 @@ Database::disconnect();
     <?php endif; ?>
 
     <?php if ($kelas_aktif): ?>
+        <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'dashboard_kelas.php' ? 'active' : '' ?>" href="dashboard_kelas.php?kelas_id=<?= $kelas_aktif ?>">Dashboard Kelas</a></li>
         <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'daftar_hadir.php' ? 'active' : '' ?>" href="daftar_hadir.php">Daftar Hadir</a></li>
+        <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'rekap_hadir.php' ? 'active' : '' ?>" href="rekap_hadir.php">Rekap Daftar Hadir</a></li>
         <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'user data.php' ? 'active' : '' ?>" href="user data.php">Data Mahasiswa</a></li>
         <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'registration.php' ? 'active' : '' ?>" href="registration.php">Registrasi Kartu Mahasiswa</a></li>
         <li><a class="<?= basename($_SERVER['PHP_SELF']) == 'read tag.php' ? 'active' : '' ?>" href="read tag.php">Baca Kartu</a></li>
-        <li><a href="keluar_kelas.php">Kembali</a></li>
+        <li class="right"><a href="keluar_kelas.php">Kembali</a></li>
     <?php endif; ?>
 </ul>
